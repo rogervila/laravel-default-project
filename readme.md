@@ -7,6 +7,46 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## About Laravel default project
+
+Laravel 5.3 default project with Stylus and Rollup, without assets, views nor routes.
+
+**Step 1**: clone the project with git
+
+```sh
+$ git clone git@github.com:rogervila/laravel-default-project.git
+```
+
+**Step 2**: go into the `laravel-default-project` folder and run composer
+```sh
+$ cd laravel-default-project
+$ composer install
+```
+
+**Step 2.1**: if you want to get the last vendor versions, run composer update
+```sh
+$ composer update
+```
+
+**Step 3**: install node modules with [yarn](https://yarnpkg.com/) or npm
+```sh
+# with yarn
+$ yarn
+# with npm 
+$ npm install
+```
+
+**Step 3.1**: if you want to upgrade to the last module versions, do it with yarn or npm
+```sh
+# with yarn
+$ yarn upgrade
+# with npm 
+$ npm update
+```
+
+**Step 4**: if you want a fresh start for the project, remove the `.git` folder
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
