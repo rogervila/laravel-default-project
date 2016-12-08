@@ -7,7 +7,7 @@ Laravel 5.3 default project with Stylus and Rollup, without assets, views nor ro
 **Step 1**: clone the project with git
 
 ```sh
-$ git clone git@github.com:rogervila/laravel-default-project.git
+$ git clone https://github.com/rogervila/laravel-default-project.git
 ```
 
 **Step 2**: go into the `laravel-default-project` folder and run composer
