@@ -1,5 +1,7 @@
 <?php
 
 Route::get('/', function () {
-    return 'it works';
+    return response('it works!');
 });
+
+Auth::routes();
