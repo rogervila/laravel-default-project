@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ App::getLocale() }}" {{-- prefix="og: http://ogp.me/ns#"--}} >
+<html lang="{{ config('app.locale') }}"  {{-- prefix="og: http://ogp.me/ns#"--}} >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -7,12 +7,20 @@
     <title>
         Title
     </title>
-    
+
+    {{--
+    <!--[if lte IE 10]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <script src="https://cdn.polyfill.io/v2/polyfill.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script>
+    <![endif]-->
+    --}}
+
     {{--
     <meta name="description" content="">
     <meta name="author" content="">
     --}}
-    
+
     {{--
     <link rel="alternate" hreflang="ca" href="{{ URL::to('/ca') }}">
     <link rel="alternate" hreflang="en" href="{{ URL::to('/en') }}">
@@ -47,11 +55,11 @@
     <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('favicons/apple-touch-icon-152x152.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicons/apple-touch-icon-180x180.png') }}">
     --}}
-    
+
     {{--
     <link href="https://plus.google.com/+NAME " rel="publisher">
     --}}
-    
+
     {{--
     <meta property="og:locale" content="{{ App::getLocale() }}">
     <meta property="og:type" content="website">
@@ -61,7 +69,7 @@
     <meta property="og:site_name" content="{{ config('app.name') }}">
     <meta property="og:image" content="{{ asset('img/placeholder.jpg') }}">
     --}}
-    
+
     {{--
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:description" content="">
@@ -71,7 +79,7 @@
     <meta name="twitter:creator" content="">
     <meta name="twitter:image:src" content="{{ asset('img/placeholder.jpg') }}">
     --}}
-    
+
     {{--
     <meta name="dc.language" content="{{ App::getLocale() }}">
     <meta name="dc.title" content="">
@@ -80,16 +88,16 @@
     --}}
 
     {{-- Styles --}}
-    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
 
     @yield('head')
-    
 </head>
 <body data-csrf="{{ csrf_token() }}">
 
-    @yield('body')
+@yield('body')
 
-    {{-- Scripts --}}
-    <script src="{{ asset('/js/app.js') }}"></script>
+{{-- Scripts --}}
+<script src="{{ asset('/js/app.js') }}"></script>
+
 </body>
 </html>

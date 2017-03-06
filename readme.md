@@ -2,7 +2,7 @@
 
 ## About Laravel default project
 
-Laravel 5.3 default project with Stylus and Rollup, without assets, views nor routes.
+Laravel 5.4 default project without predefined assets, views nor routes.
 
 **Step 1**: clone the project with git
 

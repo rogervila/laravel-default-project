@@ -1,7 +1,11 @@
 class Test {
-    constructor() {
-        console.log('ES6 ready');
-    }
+	constructor(message) {
+		this.message = message;
+	}
+
+	log() {
+		console.log(this.message);
+	}
 }
 
-new Test();
+new Test('ok').log();

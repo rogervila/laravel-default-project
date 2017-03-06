@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+<!-- Main Content -->
 @section('body')
 
 @if (session('status'))
