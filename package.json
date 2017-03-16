@@ -10,6 +10,6 @@
   "devDependencies": {
     "laravel-mix": "^0.8.1",
     "stylus": "^0.54.5",
-    "stylus-loader": "^2.5.0"
+    "stylus-loader": "^3.0.1"
   }
 }
