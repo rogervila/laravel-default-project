@@ -2,6 +2,8 @@
 
 ## About Laravel default project
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rogervila/laravel-default-project.svg)](https://greenkeeper.io/)
+
 Laravel 5.4 default project without predefined assets, views nor routes.
 
 **Step 1**: clone the project with git
