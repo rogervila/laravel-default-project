@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ config('app.locale') }}"  {{-- prefix="og: http://ogp.me/ns#"--}} >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
         Title
@@ -10,7 +11,6 @@
 
     {{--
     <!--[if lte IE 10]>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <script src="https://cdn.polyfill.io/v2/polyfill.min.js" type="text/javascript"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script>
     <![endif]-->
